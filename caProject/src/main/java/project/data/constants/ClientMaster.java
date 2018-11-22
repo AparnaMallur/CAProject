@@ -20,6 +20,7 @@ public class ClientMaster {
 	public static int Addclient_contactperson3_mobileno_columnno=16;
 	public static int Addclient_contactperson3_designation_columnno=17;
 	public static int Addclient_remark_columnno=18;
+	public static int Addclient_DOB=19;
 	
 
 }

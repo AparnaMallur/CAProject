@@ -37,6 +37,7 @@ public class ClientMaster {
 	private static String cp_number3="";
 	private static String cp_desig3 ="";
 	private static String Remark ="";
+	private static String DOB="";
 
  // @Test
   public static void Init(WebDriver driver) {	//  System.out.println("Init");
@@ -122,7 +123,7 @@ cp_name1=ReadExcel.getCellData(Rowno, project.data.constants.ClientMaster.Addcli
 		 cp_number3=ReadExcel.getCellData(Rowno, project.data.constants.ClientMaster.Addclient_contactperson3_mobileno_columnno);;;
 		 cp_desig3 =ReadExcel.getCellData(Rowno, project.data.constants.ClientMaster.Addclient_contactperson3_designation_columnno);;;
 		  Remark =ReadExcel.getCellData(Rowno, project.data.constants.ClientMaster.Addclient_remark_columnno);;;
-		 																				 
+		 	DOB=ReadExcel.getCellData(Rowno, project.data.constants.ClientMaster.Addclient_DOB);																			 
 	    }
  public static void SetData() throws Exception {
 	 /*System.out.println(client_name);
@@ -159,6 +160,7 @@ cp_name1=ReadExcel.getCellData(Rowno, project.data.constants.ClientMaster.Addcli
 	pageObjects.AddClient.txtbx_no_of_emp(driver1).sendKeys(no_of_emp);
 	pageObjects.AddClient.txtbx_client_number(driver1).sendKeys(client_number);
 	pageObjects.AddClient.txtbx_client_email(driver1).sendKeys(client_email);
+	pageObjects.AddClient.DOBClient(driver1).sendKeys(DOB);
 	pageObjects.AddClient.txtbx_client_password(driver1).sendKeys(client_password);
 	pageObjects.AddClient.txtbx_cp_name1(driver1).sendKeys(cp_name1);
 	pageObjects.AddClient.txtbx_cp_number1(driver1).sendKeys(cp_number1);
@@ -175,6 +177,7 @@ cp_name1=ReadExcel.getCellData(Rowno, project.data.constants.ClientMaster.Addcli
 	AddClient.txtbx_cp_email3(driver1).sendKeys(cp_email3);
 		pageObjects.AddClient.txtbx_cp_desig3(driver1).sendKeys(cp_desig3);
 	AddClient.txtbx_remark(driver1).sendKeys(Remark);
+	
 	
  }
 }

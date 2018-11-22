@@ -5,7 +5,7 @@
     <classes>
       <class name="ca.caProject.ClientStatus">
         <methods>
-          <include name="AddClientStatus"/>
+          <include name="EditClientStatus"/>
         </methods>
       </class> <!-- ca.caProject.ClientStatus -->
     </classes>

@@ -257,4 +257,9 @@ public static WebElement btnclose(WebDriver driver){
     return element;
 
     }
+public static WebElement DOBClient(WebDriver driver) {
+	element=driver.findElement(By.name("client_dob"));
+	return element;
+	
+}
 }

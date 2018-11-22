@@ -52,5 +52,15 @@ public class ClientStatus {
 			element =driver.findElement(By.id("button_datatables_example"));
 			return element;
 		}
-	
+	public static WebElement clientStatus_Edit(WebDriver driver) {
+		                     
+		element =driver.findElement(By.id("edit_client_type_name"));
+		return element;
+		
+	}
+	public static WebElement EditClientStatusSubmit(WebDriver driver) {
+		element=driver.findElement(By.xpath("//*[@id=\"edit_price_type_form\"]/div[2]/button[1]"));
+		return element;
+		
+	}
 }
