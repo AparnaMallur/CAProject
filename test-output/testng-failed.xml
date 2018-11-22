@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test - Suite]">
+  <test name="Tools QA(failed)">
+    <classes>
+      <class name="ca.caProject.ClientStatus">
+        <methods>
+          <include name="ClientStatusRequired"/>
+          <include name="AddClientStatus"/>
+        </methods>
+      </class> <!-- ca.caProject.ClientStatus -->
+      <class name="ca.caProject.launchAppCA">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- ca.caProject.launchAppCA -->
+    </classes>
+  </test> <!-- Tools QA(failed) -->
+</suite> <!-- Failed suite [Test - Suite] -->
